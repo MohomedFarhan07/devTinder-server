@@ -47,6 +47,13 @@ const userSchema = new mongoose.Schema(
         message: `{VALUE} is not a valid gender type`,
       },
     },
+    isPremium: {
+      type: Boolean,
+      default: false,
+    },
+    membershipType: {
+      type: String,
+    },
     photoUrl: {
       type: String,
       default: "https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp",
